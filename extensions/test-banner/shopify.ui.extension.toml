@@ -5,18 +5,24 @@ extension_points = [
   'Checkout::Dynamic::Render'
 ]
 
-# [[metafields]]
-# namespace = "my-namespace"
-# key = "my-key"
-
-# [[metafields]]
-# namespace = "my-namespace"
-# key = "my-key-2"
-
 # Read more on extension settings at https://shopify.dev/api/checkout-extensions/checkout/configuration
-# [settings]
-#   [[settings.fields]]
-#   key = "banner_title"
-#   type = "single_line_text_field"
-#   name = "Banner title"
-#   description = "Enter a title for the banner"
+[settings]
+
+  [[settings.fields]]
+  key = "show_notification"
+  type = "boolean"
+  name = "Show notification"
+  description = "Check to show notifications"
+
+  [[settings.fields]]
+  key = "sum_level_1"
+  type = "number_integer"
+  name = "Minimum purchase requirements"
+  description = "Set minimum quantity for level 1"
+
+  [[settings.fields]]
+  key = "msg_level_1"
+  type = "single_line_text_field"
+  name = "Message about discount"
+  description = "Set text for level 1 discount message"
+
