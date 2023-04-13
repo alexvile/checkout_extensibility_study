@@ -24,5 +24,17 @@ extension_points = [
   key = "msg_level_1"
   type = "single_line_text_field"
   name = "Message about discount"
-  description = "Set text for level 1 discount message"
+  description = "Set text for level 1 discount message. Use [[difference]] to display amount is missing to activate discount"
+
+[[settings.fields]]
+  key = "sum_level_2"
+  type = "number_integer"
+  name = "Minimum purchase requirements"
+  description = "Set minimum quantity for level 2"
+
+  [[settings.fields]]
+  key = "msg_level_2"
+  type = "single_line_text_field"
+  name = "Message about discount"
+  description = "Set text for level 2 discount message. Use [[difference]] to display amount is missing to activate discount"
 
