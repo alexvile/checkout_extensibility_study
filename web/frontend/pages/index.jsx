@@ -13,10 +13,16 @@ import { TitleBar } from "@shopify/app-bridge-react";
 import { trophyImage } from "../assets";
 
 import { ProductsCard } from "../components";
+import { CheckoutHeader } from "../components/CheckoutHeader";
+import { ResourcePicker } from "@shopify/app-bridge-react";
 
 export default function HomePage() {
   return (
     <Page narrowWidth>
+      <div>
+        <h1>TESTING2</h1>
+        <CheckoutHeader />
+      </div>
       <TitleBar title="App name" primaryAction={null} />
       <Layout>
         <Layout.Section>

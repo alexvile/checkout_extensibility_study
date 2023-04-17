@@ -67,14 +67,15 @@ function App() {
           )}
         </View>
       )}
-
-      <TextBlock>All Info</TextBlock>
+      {/* <View>
+  <TextBlock>All Info</TextBlock>
       <TextBlock>Amount for 1 level : {sum_level_1} </TextBlock>
       <TextBlock>Amount for 2 level : {sum_level_2} </TextBlock>
       <TextBlock>
         Original: {originalPrice} {currencyCode}
       </TextBlock>
       <TextBlock>Final: {amount}</TextBlock>
+  </View> */}
     </Banner>
   );
 }
